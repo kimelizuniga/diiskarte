@@ -1,0 +1,230 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 150px;
+    background-color: #FFF;
+    text-align: center;
+    padding: 50px;
+}
+
+nav {
+   background-color: rgba(248, 245, 245, 0.9);
+}
+
+nav li {
+    margin-right: 2em;
+    padding-top: 4px;
+    padding-bottom: 8px;
+ 
+}
+
+
+nav a {
+    font-weight: 500;
+    color: #b10606;
+    font-size: 18px;
+    display: inline-block !important;
+    border-bottom: 3px solid rgba(177,6,6, 0.0);
+    transition: border .5s ease;
+}
+
+nav a:hover {
+    color: #b10606;
+    border-bottom: 3px solid rgba(177,6,6, 1);
+}
+
+
+footer {
+    background-color: grey;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.mainSection h4 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.landingMain article {
+    margin-top: 1em;
+    background-color: rgba(221, 214, 214, 0.3);
+    border-radius: 1em;
+    padding: 0;
+}
+
+.landingMain h3, p {
+    padding: 1em;
+}
+
+.landingMain section {
+    margin-bottom: 1em;
+}
+
+.navbar .navbar-nav {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-menu {
+    background-color: rgba(248, 245, 245, 0.9);
+    border: 0;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    color: #b10606;
+    background-color:  rgba(177,6,6, 0);
+    transition: background-color 0.5s ease;
+    border: 0;
+}
+
+.dropdown-item:hover {
+    color: white;
+    background-color:  rgba(177,6,6, 1);
+    border: 0;
+}
+
+.activated {
+    border-bottom: 3px solid #b10606;
+}
+
+.dropdown-activated {
+    color: white;
+    background-color: #b10606;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(177,6,6, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none
+}
+
+.row {
+     flex-wrap: wrap;
+     margin-bottom: 1em;
+}
+
+.row > [class*='col-'] {
+     display: flex;
+     flex-direction: column;
+}
+
+.lineContent {
+    color: #000;
+    text-align: center;
+    height: 230px;
+    width: 60%;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: x-large;
+    font-style: italic;
+    background-color: rgba(248, 245, 245, 0.9);
+    border-radius: 0.5em;
+    line-height: 230px;
+}
+
+.lineText {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.button-links {
+    background-color: #b10606;
+    color: white;
+    margin: auto;
+    box-shadow: 2px 4px 10px black;
+}
+
+.button-links:hover {
+    color: #b10606;
+    background-color: #FFF;
+    border: 1px solid #b10606;
+}
+
+div.overflowHidden {
+    height: 200px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#roofImage, #deckImage, #kitchenImage, #bathImage {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform .4s;
+}
+
+#roofImage {
+     background-image: url('https://www.shawnsroofing.ca/uploads/Uaz37f4b/7.jpg');
+}
+
+#deckImage {
+    background-image: url('https://www.thespruce.com/thmb/6OHNW2Cg9PlqosJnwQzV-zwwNYQ=/3000x2000/filters:fill(auto,1)/GettyImages-912332782-5b0eb522eb97de003785a7a0.jpg');
+}
+
+#kitchenImage {
+    background-image: url('https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/4/23/1/HUHH2018-Curb-Appeal_Seattle-WA_11.jpg.rend.hgtvcom.966.644.suffix/1524514638493.jpeg');
+}
+
+#bathImage {
+    background-image: url('https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2017/8/15/0/IO_Lindye-Galloway_Blue-Herringbone-Bath_2.jpg.rend.hgtvcom.966.644.suffix/1502815658591.jpeg');
+}
+
+#roofImage:hover, #deckImage:hover, #kitchenImage:hover, #bathImage:hover {
+    transform: scale(1.5);
+}
+
+#mainService {
+    margin-top: 1em;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 350px;
+}
+
+#mainService h5 {
+    color: #b10606;
+    font-weight: bolder;
+}
+
+#imageLineOne {
+    background-image: url('https://www.ecohome.net/media/articles/images/91/71/9171dba55e952c47c1c7ffa87524e0820510c3dc/thumbs/G41F4GzRqeJd_1200x500_ZBprRkQU.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+    margin-top: 2em;
+    padding-top: 60px;
+    height: 350px;
+    border-top-right-radius: 20em;
+    border-bottom-right-radius: 20em;
+}
+
