@@ -41,64 +41,74 @@
                     <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link activated" href="quote.html">Request A Quote</a>
+                    <a class="nav-link" href="quote.html">Request A Quote</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link activated" href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div id="imageQuote" class="jumbotron">
-        <h2>Request A Quote</h2>
+        <h2>Contact Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut reiciendis, doloribus ad suscipit maxime.
         </p>
     </div>
 
     <div class="mainSection container">
-        <form method="POST" action="https://getform.io/f/ad357d7a-ae45-45fe-803e-3d203c6ae89f" class="mx-auto col-md-9">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputFirst">First Name <span class="colRed">*</span></label>
-                    <input type="text" name="firstName" class="form-control" id="inputFirst" placeholder="First Name" required>
+        <div class="row">
+            <form method="POST" action="https://getform.io/f/ad357d7a-ae45-45fe-803e-3d203c6ae89f" class="col-md-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputFirst">First Name <span class="colRed">*</span></label>
+                        <input type="text" name="firstName" class="form-control" id="inputFirst" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLast">Last Name <span class="colRed">*</span></label>
+                        <input type="text"name="lastName"  class="form-control" id="inputLast" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="inputEmail">Email <span class="colRed">*</span></label>
+                        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="inputPhone">Phone</label>
+                        <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Phone Number">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="mr-sm-2" for="serviceType">Service Type <span class="colRed">*</span></label>
+                        <select name="service" class="custom-select mr-sm-2" id="serviceType" required>
+                            <option selected>Choose...</option>
+                            <option value="Roofing">Roofing</option>
+                            <option value="Deck and Fences">Deck and Fences</option>
+                            <option value="Interior Renovations">Interior Renovations</option>
+                        </select>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="8"></textarea>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputLast">Last Name <span class="colRed">*</span></label>
-                    <input type="text"name="lastName"  class="form-control" id="inputLast" placeholder="Last Name" required>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn button-links">Submit</button>
                 </div>
-                <div class="form-group col-md-7">
-                    <label for="inputEmail">Email <span class="colRed">*</span></label>
-                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="email@example.com" required>
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="inputPhone">Phone</label>
-                    <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Phone Number">
-                </div>
-                <div class="col-md-6">
-                    <label class="mr-sm-2" for="serviceType">Service Type <span class="colRed">*</span></label>
-                    <select name="service" class="custom-select mr-sm-2" id="serviceType" required>
-                        <option value="Roofing">Roofing</option>
-                        <option value="Deck and Fences">Deck and Fences</option>
-                        <option value="Interior Renovations">Interior Renovations</option>
-                    </select>
-                </div>
-                <div class="col-md-6 form-group">
-                    <label for="date">Requested Date <span class="colRed">*</span></label>
-                    <input class="form-control" type="date" name="date" id="date" required>
-                </div>
-                <div class="col-12 form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" class="form-control" id="message" cols="30" rows="8"></textarea>
-                </div>
+            </form>
+            <div class="col-md-6 px-5">
+                <h4 class="text-center">Connect With Us</h4>
+                <h5>Quality is our priority.</h5>
+                <h6>Diskarte Renovations</h6>
+                <ul>
+                    <li>Serving Kingston and the surrounding area</li>
+                    <li>Phone: <a href="tel:613-123-4567">613-123-4567</a></li>
+                    <li>Email: <a href="mailto: info@diskarte.ca">info@diskarte.ca</a></li>
+                    <li>Facebook, Instagram</li>
+                </ul>
             </div>
-            <div class="text-center mt-3">
-                <button type="submit" class="btn button-links">Submit</button>
-            </div>
-        </form>
+        </div>
     </div>
 
     <div class="container">
