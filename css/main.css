@@ -44,6 +44,15 @@ footer {
     margin-top: 2em;
 }
 
+form {
+    box-shadow: 0px 0px 15px grey;
+    border-radius: 0.5em;
+    padding: 2em;
+}
+
+label {
+    font-weight: bold;
+}
 
 .mainSection {
     display: flex;
@@ -167,6 +176,23 @@ footer {
     color: #b10606;
     background-color: #FFF;
     border: 1px solid #b10606;
+}
+
+.galleryMain img {
+    width: 100%;
+    max-height: 150px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    box-shadow: 2px 1px 5px black;
+    border-radius: 4px;
+}
+
+.galleryMain img:hover {
+    cursor: zoom-in;
+}
+
+.colRed {
+    color: #b10606;
 }
 
 div.overflowHidden {
