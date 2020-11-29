@@ -10,6 +10,9 @@ let deckImages = [
     {"source": "images/deck_1.jpg", "alt": "deck_1"},
     {"source": "images/deck_2.jpg", "alt": "deck_2"},
     {"source": "images/deck_3.jpg", "alt": "deck_3"},
+    {"source": "images/deck_4.jpg", "alt": "deck_4"},
+    {"source": "images/deck_5.jpg", "alt": "deck_5"},
+    {"source": "images/deck_6.jpg", "alt": "deck_6"},
     {"source": "images/fence_1.jpg", "alt": "fence_1"},
     {"source": "images/fence_2.jpg", "alt": "fence_2"}
 ]
