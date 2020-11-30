@@ -192,12 +192,36 @@ label {
 
 .colRed {
     color: #b10606;
+    text-shadow: 1px 0px 2px black;
 }
 
 div.overflowHidden {
     height: 200px;
     border-radius: 1em;
     overflow: hidden;
+}
+
+.contact-list ul {
+    padding-left: 0%;
+}
+
+.contact-list li {
+    list-style: none;
+}
+
+.fa-facebook, .fa-instagram {
+    margin-top: 12px;
+    font-size: 2em;
+}
+
+.fa-instagram {
+    color: transparent;
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 #roofImage, #deckImage, #kitchenImage, #bathImage {
@@ -295,3 +319,53 @@ div.overflowHidden {
 #carouselTestimonials h6 {
     margin-top: 2em;
 }
+
+#modal-container {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#carousel-modal {
+    background-color: #fefefe;
+    margin-right: auto; /* 15% from the top and centered */
+    margin-left: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+    height: auto;
+    position: relative;
+    top: calc(50% - 25px);
+    top: -moz-calc(50% - 25px);
+    top: -webkit-calc(50% - 25px);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+#exit {
+    position: absolute;
+    right: 0;
+    margin-right: 1.5em;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 0px 2px black;
+    cursor: pointer;
+}
+
+#carousel-modal img {
+    width: 100%;
+    max-height: 80vh;
+}
+
+@media only screen and (max-width: 768px) {
+    #carousel-modal {
+      width: 100%;
+    }
+  }
