@@ -224,6 +224,10 @@ div.overflowHidden {
   -webkit-background-clip: text;
 }
 
+.mySlides {
+    display: none; /* Hides modal images by default */
+}
+
 #roofImage, #deckImage, #kitchenImage, #bathImage {
     height: 100%;
     background-size: cover;
@@ -320,7 +324,7 @@ div.overflowHidden {
     margin-top: 2em;
 }
 
-#modal-container {
+#modal-container, #modal-container-deck, #modal-container-interior {
     display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -332,7 +336,7 @@ div.overflowHidden {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#carousel-modal {
+#carousel-modal, #carousel-modal-deck, #carousel-modal-interior {
     background-color: #fefefe;
     margin-right: auto; /* 15% from the top and centered */
     margin-left: auto;
@@ -349,7 +353,7 @@ div.overflowHidden {
     -moz-transform: translateY(-50%);
 }
 
-#exit {
+#exit, #exit-deck, #exit-interior {
     position: absolute;
     right: 0;
     margin-right: 1.5em;
@@ -359,13 +363,49 @@ div.overflowHidden {
     cursor: pointer;
 }
 
-#carousel-modal img {
+#left, #right, #left-deck, #right-deck, #left-interior, #right-interior {
+    position: absolute;
+    width: 60px;
+    font-size: 55px;
+    color: white;
+    top: 50%;
+    margin-top: -5%;
+    cursor: pointer;
+    transition: 0.6s ease;
+    border-radius: 8px;
+}
+
+#left:hover, #right:hover, #left-deck:hover, #right-deck:hover, #left-interior:hover, #right-interior:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+#left, #left-deck, #left-interior {
+    left: 0;
+    text-shadow: -1px 0 2px black;
+    margin-left: 24px;
+    text-align: center;
+}
+
+#right, #right-deck, #right-interior {
+    right: 0;
+    text-shadow: 1px 0 2px black;
+    margin-right: 24px;
+    text-align: center;
+}
+
+
+#carousel-modal img , #carousel-modal-deck img , #carousel-modal-interior img {
     width: 100%;
     max-height: 80vh;
 }
 
 @media only screen and (max-width: 768px) {
-    #carousel-modal {
+    #carousel-modal, #carousel-modal-deck, #carousel-modal-interior {
       width: 100%;
+    }
+
+    #left, #right, #left-deck, #right-deck, #left-interior, #right-interior {
+        margin-top: -7%;
+        font-size: 50px;
     }
   }
