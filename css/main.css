@@ -225,6 +225,10 @@ div.overflowHidden {
   -webkit-background-clip: text;
 }
 
+.fa-instagram:hover {
+    color: rgb(73, 71, 71);
+}
+
 .mySlides {
     display: none; /* Hides modal images by default */
 }
@@ -261,6 +265,15 @@ div.overflowHidden {
 
 .mySlides, .mySlidesD, .mySlidesI {
     user-select: none;
+}
+
+header {
+    padding: 0;
+    height: auto;
+}
+
+header img {
+    width: 35%;
 }
 
 #roofImage, #deckImage, #kitchenImage, #bathImage {
