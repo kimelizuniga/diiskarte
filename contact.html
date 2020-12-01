@@ -61,7 +61,7 @@
 
     <div class="mainSection container mb-4">
         <div class="row mx-1">
-            <form method="POST" action="https://getform.io/f/ad357d7a-ae45-45fe-803e-3d203c6ae89f" class="col-md-6">
+            <form method="POST" action="https://getform.io/f/ad357d7a-ae45-45fe-803e-3d203c6ae89f" class="col-md-6" enctype="multipart/form-data">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputFirst">First Name <span class="colRed">*</span></label>
@@ -82,7 +82,7 @@
                         <label for="inputPhone">Phone</label>
                         <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Phone Number">
                     </div>
-                    <div class="col-md-6">
+                    <div class="form-group col-md-6">
                         <label class="mr-sm-2" for="serviceType">Service Type <span class="colRed">*</span></label>
                         <select name="service" class="custom-select mr-sm-2" id="serviceType" required>
                             <option selected>Choose...</option>
@@ -90,6 +90,10 @@
                             <option value="Deck and Fences">Deck and Fences</option>
                             <option value="Interior Renovations">Interior Renovations</option>
                         </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="image">Upload Image</label>
+                        <input type="file" name="file" id="image">
                     </div>
                     <div class="col-12 form-group">
                         <label for="message">Message</label>
