@@ -51,6 +51,8 @@ for (let i = 0; i < interiorImages.length; i++) {
 
 /* MODAL */
 
+let modalBackgroundSource;
+
 function modalShow() {
   modalContainer.style.display = "block";
 }
@@ -96,8 +98,9 @@ for (let i = 0; i < roofImages.length; i++) {
     <h6>${caption}</h6>
     </div>
     `;
-
 }
+
+
 
 for (let i = 0; i < deckImages.length; i++) {
 
