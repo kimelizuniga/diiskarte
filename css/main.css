@@ -388,6 +388,7 @@ header img {
     background-color: #fefefe;
     margin-right: auto; /* 15% from the top and centered */
     margin-left: auto;
+    margin-top: 25px;
     padding: 20px;
     border: 1px solid #888;
     width: 75%;

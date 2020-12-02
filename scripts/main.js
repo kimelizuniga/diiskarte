@@ -114,6 +114,7 @@ for (let i = 0; i < deckImages.length; i++) {
     <img src="${deckImages[i].source}" alt="${deckImages[i].alt}">
     <span">${i + 1}/${deckImages.length}</span>
     <h6>${caption}</h6>
+    </div>
     `;
 }
 
