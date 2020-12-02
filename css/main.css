@@ -267,6 +267,15 @@ div.overflowHidden {
     user-select: none;
 }
 
+.roof-images, .deck-images, .interior-images {
+    transition: transform .4s;
+    height: auto;
+}
+
+.roof-images:hover, .deck-images:hover, .interior-images:hover {
+    transform: scale(1.1);
+}
+
 header {
     padding: 0;
     height: auto;
