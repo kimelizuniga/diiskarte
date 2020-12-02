@@ -413,15 +413,19 @@ header img {
 }
 
 #left, #right, #left-deck, #right-deck, #left-interior, #right-interior {
-    position: absolute;
-    width: 60px;
-    font-size: 55px;
-    color: white;
-    top: 50%;
-    margin-top: -5%;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -65px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
     transition: 0.6s ease;
-    border-radius: 8px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #left:hover, #right:hover, #left-deck:hover, #right-deck:hover, #left-interior:hover, #right-interior:hover {
@@ -458,8 +462,4 @@ header img {
       width: 100%;
     }
 
-    #left, #right, #left-deck, #right-deck, #left-interior, #right-interior {
-        margin-top: -7%;
-        font-size: 50px;
-    }
   }
