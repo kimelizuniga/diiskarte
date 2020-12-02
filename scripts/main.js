@@ -3,6 +3,7 @@ let roofingContent = document.getElementById("roofing-gallery"),
   interiorContent = document.getElementById("interior-gallery"),
   modalContainer = document.getElementById("modal-container"),
   innerCarousel = document.getElementById("inner-carousel"),
+  carouselModal = document.getElementById("carousel-modal"),
   leftArrow = document.getElementById("left"),
   rightArrow = document.getElementById("right"),
   slideImages = document.getElementsByClassName("mySlides"),
@@ -55,29 +56,35 @@ let modalBackgroundSource;
 
 function modalShow() {
   modalContainer.style.display = "block";
+  document.body.style.overflow = "hidden";
 }
 
 function modalShowD() {
   modalContainerD.style.display = "block";
+  document.body.style.overflow = "hidden";
 }
 
 function modalShowI() {
   modalContainerI.style.display = "block";
+  document.body.style.overflow = "hidden";
 }
 
 $(document).on('click', '#exit', function () {
   //do something
   modalContainer.style.display = "none";
+  document.body.style.overflow = "auto";
 })
 
 $(document).on('click', '#exit-deck', function () {
   //do something
   modalContainerD.style.display = "none";
+  document.body.style.overflow = "auto";
 })
 
 $(document).on('click', '#exit-interior', function () {
   //do something
   modalContainerI.style.display = "none";
+  document.body.style.overflow = "auto";
 })
 
 
@@ -162,8 +169,15 @@ function showSlides(n) {
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].style.opacity = "0";
   }
   slides[slideIndex - 1].style.display = "block";
+  // modalContainer.style.backgroundImage = `url('${roofImages[slideIndex-1].source}')`;
+
+  setTimeout(function(){
+    slides[slideIndex -1].style.opacity = "1";
+  }, 20)
+
 }
 
 /* Deck */
@@ -188,8 +202,14 @@ function showSlidesD(d) {
   if (d < 1) { slideIndexD = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].style.opacity = "0";
   }
   slides[slideIndexD - 1].style.display = "block";
+  // modalContainerD.style.backgroundImage = `url('${deckImages[slideIndexD-1].source}')`;
+
+  setTimeout(function(){
+    slides[slideIndexD -1].style.opacity = "1";
+  }, 20)
 }
 
 /* Interior */
@@ -214,8 +234,14 @@ function showSlidesI(i) {
   if (i < 1) { slideIndexI = slides.length }
   for (x = 0; x < slides.length; x++) {
     slides[x].style.display = "none";
+    slides[x].style.opacity = "0";
   }
   slides[slideIndexI - 1].style.display = "block";
+  // modalContainerI.style.backgroundImage = `url('${interiorImages[slideIndexI-1].source}')`;
+
+  setTimeout(function(){
+    slides[slideIndexI -1].style.opacity = "1";
+  }, 20)
 }
 
 $(window).keyup(function (e) {
@@ -240,5 +266,6 @@ window.onclick = function (event) {
     modalContainer.style.display = "none";
     modalContainerD.style.display = "none";
     modalContainerI.style.display = "none";
+    document.body.style.overflow = "auto";
   }
 }
