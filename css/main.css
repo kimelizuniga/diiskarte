@@ -255,7 +255,7 @@ div.overflowHidden {
     user-select: none;
     color: white;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .mySlides img, .mySlidesD img, .mySlidesI img {
