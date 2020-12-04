@@ -463,7 +463,7 @@ header img {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, header, nav {
+    body, header, nav, nav a {
         background-color: black;
         color: white;
     }
