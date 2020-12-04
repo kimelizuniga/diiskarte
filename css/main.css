@@ -463,10 +463,11 @@ header img {
 }
 
 @media (prefers-color-scheme: dark) {
-    header {
+    body {
         background-color: black;
+        color: white;
     }
-    
+
     #logo-light {
         display: none;
     }
