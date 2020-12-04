@@ -11,6 +11,11 @@ header {
     padding: 50px;
 }
 
+header ul {
+    list-style: none;
+    float: right;
+}
+
 nav {
    background-color: rgba(250, 245, 245, 1);
    z-index: 1;
