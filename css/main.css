@@ -6,7 +6,7 @@ body {
 
 header {
     height: 150px;
-    background-image: url('images/background-white.svg');
+    background-image: url('../images/background-white.svg');
     text-align: center;
     padding: 50px;
 }
