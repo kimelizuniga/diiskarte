@@ -13,7 +13,6 @@ header {
 
 header ul {
     list-style: none;
-    float: right;
 }
 
 nav {
@@ -277,6 +276,13 @@ div.overflowHidden {
     transform: scale(1.1);
 }
 
+.social-media {
+    position: absolute;
+    right: 0;
+    margin-right: 2em;
+    z-index: 1;
+}
+
 header {
     padding: 0;
     height: auto;
@@ -467,6 +473,10 @@ header img {
 
     header img {
         width: 75%;
+    }
+
+    .social-media {
+        font-size: 0.7em;
     }
 
     #carousel-modal, #carousel-modal-deck, #carousel-modal-interior {
