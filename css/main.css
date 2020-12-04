@@ -458,6 +458,20 @@ header img {
     max-height: 80vh;
 }
 
+#logo-dark {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    #logo-light {
+        display: none;
+    }
+
+    #logo-dark {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     header img {
