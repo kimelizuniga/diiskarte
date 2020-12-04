@@ -463,9 +463,13 @@ header img {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, header, nav, nav a {
+    body, header, nav, nav a, nav .dropdown-item {
         background-color: black;
         color: white;
+    }
+
+    nav .dropdown-item:hover {
+        color: black;
     }
 
     #logo-light {
