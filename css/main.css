@@ -61,7 +61,7 @@ label {
     font-weight: bold;
 }
 
-iframe {
+iframe.videos {
     margin-top: 0.5em;
     height: 300px;
     width: 100%;
