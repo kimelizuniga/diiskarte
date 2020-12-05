@@ -46,9 +46,28 @@ nav a:hover {
 
 
 footer {
-    background-color: grey;
-    text-align: center;
-    margin-top: 2em;
+    background-color: rgb(68, 66, 66);
+    color: rgb(250, 245, 245);
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+}
+
+footer li {
+    margin-bottom: 6px;
+}
+
+footer a {
+    color: rgb(165, 154, 154);
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #f7edec;
+    text-decoration: none;
 }
 
 form {
@@ -239,6 +258,8 @@ div.overflowHidden {
 .fa-facebook, .fa-instagram {
     margin-top: 12px;
     font-size: 2em;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
 }
 
 .fa-instagram {
@@ -251,8 +272,8 @@ div.overflowHidden {
   -webkit-background-clip: text;
 }
 
-.fa-instagram:hover {
-    color: rgb(73, 71, 71);
+.fa-instagram:hover, .fa-facebook:hover {
+    color: rgb(189, 180, 180);
 }
 
 .mySlides, .mySlidesD, .mySlidesI {

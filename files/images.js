@@ -17,6 +17,7 @@ let deckImages = [
 
 let interiorImages = [
     {"source": "images/living_room_1.jpg", "alt": "living_room_1"},
+    {"source": "images/bathroom_tile1.jpg", "alt": "bathrom_tile1"},
     {"source": "images/stairs_1.jpg", "alt": "stairs_1"},
     {"source": "images/stairs_2.jpg", "alt": "stairs_2"},
 ]
