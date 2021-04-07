@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -478,10 +477,6 @@ header img {
 }
 
 @media (max-width: 768px) {
-
-    header {
-        height: 100%;
-    }
 
     header img {
         width: 75%;
