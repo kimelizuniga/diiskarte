@@ -242,7 +242,7 @@ iframe.videos {
 }
 
 div.overflowHidden {
-    height: 200px;
+    height: 250px;
     border-radius: 0.5em;
     overflow: hidden;
 }
