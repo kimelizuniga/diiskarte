@@ -360,9 +360,10 @@ header img {
 }
 
 #imageDeck {
-    background-image: url('https://www.decks.ca/wp-content/plugins/Decks-Franchise-Page/assets/img/franchise_banner.jpg');
+    background-image: url('../images/deck_8.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     color: white;
     text-shadow: 3px 0 3px black;
 }
@@ -483,12 +484,17 @@ header img {
         width: 75%;
     }
 
+
     .social-media {
         font-size: 0.7em;
     }
 
     #carousel-modal, #carousel-modal-deck, #carousel-modal-interior {
       width: 100%;
+    }
+
+    #headerImg {
+        max-height: 200px;
     }
 
   }
