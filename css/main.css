@@ -304,6 +304,10 @@ div.overflowHidden {
     z-index: 1;
 }
 
+.roundedImg {
+    border-radius: 0.5em;
+}
+
 header {
     padding: 0;
     height: auto;
@@ -317,11 +321,12 @@ header img {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: left;
     transition: transform .4s;
 }
 
 #deckImage {
-    background-image: url('https://www.thespruce.com/thmb/6OHNW2Cg9PlqosJnwQzV-zwwNYQ=/3000x2000/filters:fill(auto,1)/GettyImages-912332782-5b0eb522eb97de003785a7a0.jpg');
+    background-image: url('../images/deck_1.png');
 }
 
 #kitchenImage {

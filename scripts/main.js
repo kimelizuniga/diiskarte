@@ -18,11 +18,8 @@ let roofingContent = document.getElementById("roofing-gallery"),
   rightArrowI = document.getElementById("right-interior"),
   slideImagesI = document.getElementsByClassName("mySlidesI"),
   roofImageList = document.getElementsByClassName("roof-images");
-
-
-
-
-/* Display all images for deck and fences */
+  
+/* Display all images for Decks and Fences */
 for (let i = 0; i < deckImages.length; i++) {
   deckContent.innerHTML +=
     `
@@ -32,7 +29,7 @@ for (let i = 0; i < deckImages.length; i++) {
     `;
 }
 
-/* Display all images for interior renovations*/
+/* Display all images for Home Interior Renovations*/
 for (let i = 0; i < interiorImages.length; i++) {
   interiorContent.innerHTML +=
     `
