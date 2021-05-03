@@ -116,7 +116,7 @@ iframe.videos {
     left: 50%;
     bottom: 0;
     margin-left: -60px !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 30px !important;
 }
 
 .landingMain h3, p {
@@ -215,6 +215,8 @@ iframe.videos {
     color: white;
     margin: auto;
     box-shadow: 2px 4px 10px black;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .button-links:hover {
@@ -365,10 +367,10 @@ header img {
 }
 
 #imageDeck {
-    background-image: url('../images/deck_8.jpg');
+    background-image: url('../images/deck_wood.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: left;
     color: white;
     text-shadow: 3px 0 3px black;
 }
