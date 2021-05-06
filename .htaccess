@@ -6,10 +6,10 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Check for file with .html extension, if file doesn't exist, don't run the rule
+# Check for file with  extension, if file doesn't exist, don't run the rule
 
-RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{REQUEST_FILENAME}\ -f
 
-# Show the page that has the .html extension
+# Show the page that has the  extension
 
-RewriteRule ^(.*)$ $1.html [NC, L]
+RewriteRule ^(.*)$ $1 [NC, L]
