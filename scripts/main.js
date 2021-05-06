@@ -133,11 +133,13 @@ showSlidesD(slideIndexD);
 // Next/previous controls
 function plusSlidesD(d) {
   showSlidesD(slideIndexD += d);
+  innerCarouselD.focus();
 }
 
 // Thumbnail image controls
 function currentSlideD(d) {
   showSlidesD(slideIndexD = d);
+  innerCarouselD.focus();
 }
 
 function showSlidesD(d) {
@@ -151,7 +153,6 @@ function showSlidesD(d) {
   }
   slides[slideIndexD - 1].style.display = "block";
   // modalContainerD.style.backgroundImage = `url('${deckImages[slideIndexD-1].source}')`;
-  slides[slideIndexD - 1].style.focus = "true";
 
   setTimeout(function(){
     slides[slideIndexD -1].style.opacity = "1";
@@ -166,11 +167,13 @@ showSlidesI(slideIndexI);
 // Next/previous controls
 function plusSlidesI(i) {
   showSlidesI(slideIndexI += i);
+  innerCarouselI.focus();
 }
 
 // Thumbnail image controls
 function currentSlideI(i) {
   showSlidesI(slideIndexI = i);
+  innerCarouselI.focus();
 }
 
 function showSlidesI(i) {
@@ -183,7 +186,6 @@ function showSlidesI(i) {
     slides[x].style.opacity = "0";
   }
   slides[slideIndexI - 1].style.display = "block";
-  slides[slideIndexI - 1].style.focus = "true";
   // modalContainerI.style.backgroundImage = `url('${interiorImages[slideIndexI-1].source}')`;
 
   setTimeout(function(){
