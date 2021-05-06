@@ -151,6 +151,7 @@ function showSlidesD(d) {
   }
   slides[slideIndexD - 1].style.display = "block";
   // modalContainerD.style.backgroundImage = `url('${deckImages[slideIndexD-1].source}')`;
+  slides[slideIndexD - 1].style.focus = "true";
 
   setTimeout(function(){
     slides[slideIndexD -1].style.opacity = "1";
@@ -182,6 +183,7 @@ function showSlidesI(i) {
     slides[x].style.opacity = "0";
   }
   slides[slideIndexI - 1].style.display = "block";
+  slides[slideIndexI - 1].style.focus = "true";
   // modalContainerI.style.backgroundImage = `url('${interiorImages[slideIndexI-1].source}')`;
 
   setTimeout(function(){
