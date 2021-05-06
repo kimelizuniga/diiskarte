@@ -323,16 +323,16 @@ header img {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
     transition: transform .4s;
 }
 
 #deckImage {
-    background-image: url('../images/deck_1.png');
+    background-image: url('../images/deck_001.jpg');
 }
 
 #kitchenImage {
-    background-image: url('https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/4/23/1/HUHH2018-Curb-Appeal_Seattle-WA_11.jpg.rend.hgtvcom.966.644.suffix/1524514638493.jpeg');
+    background-image: url('../images/interior_001.jpg');
 }
 
 #bathImage {
