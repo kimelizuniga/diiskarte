@@ -133,13 +133,11 @@ showSlidesD(slideIndexD);
 // Next/previous controls
 function plusSlidesD(d) {
   showSlidesD(slideIndexD += d);
-  innerCarouselD.focus();
 }
 
 // Thumbnail image controls
 function currentSlideD(d) {
   showSlidesD(slideIndexD = d);
-  innerCarouselD.focus();
 }
 
 function showSlidesD(d) {
@@ -167,13 +165,11 @@ showSlidesI(slideIndexI);
 // Next/previous controls
 function plusSlidesI(i) {
   showSlidesI(slideIndexI += i);
-  innerCarouselI.focus();
 }
 
 // Thumbnail image controls
 function currentSlideI(i) {
   showSlidesI(slideIndexI = i);
-  innerCarouselI.focus();
 }
 
 function showSlidesI(i) {
