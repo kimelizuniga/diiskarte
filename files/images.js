@@ -2,10 +2,8 @@
 
 let deckImages = [
     {"source": "images/deck_001.jpg", "alt": "deck"},
-    {"source": "images/deck_002.jpg", "alt": "deck"},
     {"source": "images/deck_003.jpg", "alt": "deck"},
     {"source": "images/deck_004.jpg", "alt": "deck"},
-    {"source": "images/deck_005.jpg", "alt": "deck"},
     {"source": "images/deck_006.jpg", "alt": "deck"},
     {"source": "images/deck_007.jpg", "alt": "deck"},
     {"source": "images/front_001.jpg", "alt": "front"}
