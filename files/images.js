@@ -5,7 +5,12 @@ let deckImages = [
     {"source": "images/deck_004.jpg", "alt": "deck"},
     {"source": "images/deck_006.jpg", "alt": "deck"},
     {"source": "images/deck_007.jpg", "alt": "deck"},
-    {"source": "images/front_001.jpg", "alt": "front"}
+    {"source": "images/deck_008.jpg", "alt": "deck"},
+    {"source": "images/deck_009.jpg", "alt": "deck"},
+    {"source": "images/deck_010.jpg", "alt": "deck"},
+    {"source": "images/front_001.jpg", "alt": "front"},
+    {"source": "images/fence_001.jpg", "alt": "fence"},
+    {"source": "images/fence_002.jpg", "alt": "fence"}
 ]
 
 let interiorImages = [
